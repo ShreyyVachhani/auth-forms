@@ -1,5 +1,5 @@
 # auth-forms
-This repository contains fully functional registration and login forms with robust client-side validation. The project showcases the implementation of user authentication using HTML, CSS, and JavaScript. Key features include:
+This repository contains fully functional registration and login forms with robust client-side validation. The project showcases the implementation of user authentication using HTML, CSS, and Jquery. Key features include:
 
 - **Registration Form**: Users can register with an email and password, with real-time validation to ensure passwords match.
 - **Login Form**: Users can log in with their email and password, with validation for correct credentials.
