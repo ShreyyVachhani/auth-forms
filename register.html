@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Full-stack</title>
+</head>
+
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <!-- Registration Form -->
+    <form id="registerForm">
+        <h3>Register Here</h3>
+
+        <label for="regEmail">Email</label>
+        <input type="email" id="regEmail" pattern=".+@gmail\.com" placeholder="Email" required>
+
+        <label for="regPassword">Password</label>
+        <div class="form-group">
+            <input type="password" id="regPassword" placeholder="Password" required>
+            <span class="toggle-password">
+                <img class="eye-icon" src="/img/eye-on.svg" width="" height="">
+            </span>
+        </div>
+        <label for="regConfirmPassword">Confirm Password</label>
+        <div class="form-group">
+            <input type="password" class="pasword" id="regConfirmPassword" placeholder="Confirm Password" required>
+        </div>
+        <span class="wrong-msg not-match">🚫 Nope! Passwords do not match.😅</span>
+        <button id="registerButton" type="submit">Register</button>
+        <a class="link-form" href="#" id="showLogin">Log in</a>
+    </form>
+    <!-- Login Form -->
+    <form id="loginForm" style="display:none;">
+        <h3>Login Here</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" pattern=".+@gmail\.com" id="username" required>
+        <span class="wrong-msg mail">🚫Your mail is wrong </span>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <div class="pass-validation">
+                <div class="form-group">
+                    <input type="password" id="sometext" placeholder="Password" required>
+                    <span class="toggle-password">
+                        <img class="eye-icon" src="/img/eye-on.svg" width="" height="">
+                    </span>
+                </div>
+                <span class="validation"></span>
+            </div>
+            <span class="wrong-msg">🚫 Nope! That's not the password. Try again, friend! 😅</span>
+            <span class="right-msg">🎉 Password accepted! You are officially awesome! 🥳</span>
+        </div>
+
+        <button id="loginButton" type="submit">Log In</button>
+        <div class="social">
+            <div class="go"><i class="fab fa-google"></i> Google</div>
+            <div class="fb"><i class="fab fa-facebook"></i> Facebook</div>
+        </div>
+        <a class="link-form" href="#" id="showRegister">Register</a>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"
+        integrity="sha512-Ww1y9OuQ2kehgVWSD/3nhgfrb424O3802QYP/A5gPXoM4+rRjiKrjHdGxQKrMGQykmsJ/86oGdHszfcVgUr4hA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
