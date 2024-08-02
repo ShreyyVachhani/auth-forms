@@ -88,6 +88,7 @@ $(document).ready(function () {
         $("#loginForm").hide();
         $("#registerForm").show();
     });
+
     $(".toggle-password").click(function () {
         var passwordField = $("#regPassword,#sometext");
         var fieldType = passwordField.attr("type");
