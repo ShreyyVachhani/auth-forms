@@ -7,6 +7,8 @@ $(document).ready(function () {
         if (password === confirmPassword) {
             $("#registerForm").hide();
             $("#loginForm").show();
+            localStorage.setItem('userEmail', email);
+            localStorage.setItem('userPassword', password);
         } else {
             $(".wrong-msg.not-match").hide();
             $(".wrong-msg.not-match").show();
@@ -32,8 +34,7 @@ $(document).ready(function () {
                     }, 500);
                 });
         }
-        localStorage.setItem('userEmail', email);
-        localStorage.setItem('userPassword', password);
+
     });
 
     $("#loginForm").submit(function (event) {
