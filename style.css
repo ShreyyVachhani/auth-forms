@@ -74,7 +74,7 @@ body {
   input {
       display: block;
       height: 50px;
-      width: 100%;
+      width: 95%;
       background-color: rgba(255, 255, 255, 0.07);
       border-radius: 3px;
       padding: 0 10px;
@@ -174,7 +174,7 @@ input#regConfirmPassword {
 
 .toggle-password img{
     position: absolute;
-    right: 0;
+    right: 15px;
     top: 0;
     bottom: 0;
     margin: auto;
